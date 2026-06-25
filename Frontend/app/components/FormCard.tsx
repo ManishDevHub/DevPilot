@@ -6,7 +6,7 @@ interface FormCardProps {
 
 export default function FormCard({ children }: FormCardProps) {
   return (
-    <div className="glass-card max-w-lg mx-auto mt-12 p-8">
+    <div className="w-full max-w-md p-8 rounded-2xl bg-slate-900/80 backdrop-blur-xl border border-white/10 shadow-[0_0_50px_0_rgba(99,102,241,0.15)] ring-1 ring-white/5 transition-all duration-300">
       {children}
     </div>
   );
