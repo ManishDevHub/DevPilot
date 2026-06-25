@@ -14,6 +14,7 @@ export const register = async (req: Request, res: Response) => {
   // Check unique constraints
   const existingEmail = await prisma.user.findUnique({ where: { email } });
   if (existingEmail) return res.status(409).json({ error: 'Email already registered' });
+  //@ts-ignore
 
   const existingUsername = await prisma.user.findUnique({ where: { username } });
   if (existingUsername) return res.status(409).json({ error: 'Username already taken' });
