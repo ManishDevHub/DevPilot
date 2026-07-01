@@ -87,7 +87,7 @@ export default function SignUp() {
             </label>
             <input
               type="text"
-              placeholder="John Doe"
+              placeholder="Full Name"
               className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3 text-white outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/20 transition-all placeholder:text-slate-600 text-sm"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -101,7 +101,7 @@ export default function SignUp() {
             </label>
             <input
               type="text"
-              placeholder="johndoe"
+              placeholder="username"
               className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3 text-white outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/20 transition-all placeholder:text-slate-600 text-sm"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
